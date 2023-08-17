@@ -71,3 +71,12 @@ password.addEventListener("blur", () => {
       "Minimum 8 characters required\n Number and Capital letters required";
   }
 });
+
+form.addEventListener('submit',(e)=>{
+  if(firstName.value === "" || lastName.value === "" || email.value === "" || phone.value === "" || password.value === "" || confirmPassword.value === "" || password.value !== confirmPassword.value) {
+
+    e.preventDefault();
+  }
+ 
+})
+
